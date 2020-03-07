@@ -4,7 +4,7 @@ body{
   display: flex;
 }
 
-#root{
+#root, #App{
   height: 100%;
   width: 100%;
 }
