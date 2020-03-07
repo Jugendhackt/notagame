@@ -4,7 +4,8 @@
   "description": "Webseite zur Veranschaulichung von der Komplexität der Entscheidungen, die eine flüchtende Person treffen muss.",
   "main": "index.js",
   "dependencies": {
-    "create-react-app": "^3.4.0"
+    "create-react-app": "^3.4.0",
+    "tsv": "^0.2.0"
   },
   "devDependencies": {},
   "scripts": {
