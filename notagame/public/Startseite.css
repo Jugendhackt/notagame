@@ -1,5 +1,6 @@
 body {
   font-family: Arial;
+  background-color: orange;
 }
 
 h1 {
@@ -11,6 +12,7 @@ h1 {
 p {
 margin-left: 20%;
 margin-right: 20%;
+line-height: 1.6;
 }
 button {
   position: fixed;
@@ -18,3 +20,4 @@ button {
   right: 1%;
   bottom: 1%
 }
+c
