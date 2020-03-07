@@ -1,0 +1,23 @@
+body {
+  font-family: Arial;
+  background-color: orange;
+}
+
+h1 {
+  font-size: 60px;
+  color: black;
+  text-align: center;
+}
+
+p {
+margin-left: 20%;
+margin-right: 20%;
+line-height: 1.6;
+}
+button {
+  position: fixed;
+
+  right: 1%;
+  bottom: 1%
+}
+c
