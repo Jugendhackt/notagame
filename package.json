@@ -1,0 +1,23 @@
+{
+  "name": "gituebung",
+  "version": "1.0.0",
+  "description": "Webseite zur Veranschaulichung von der Komplexität der Entscheidungen, die eine flüchtende Person treffen muss.",
+  "main": "index.js",
+  "dependencies": {
+    "create-react-app": "^3.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jugendhackt/notagame.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jugendhackt/notagame/issues"
+  },
+  "homepage": "https://github.com/Jugendhackt/notagame#readme"
+}
