@@ -1,7 +1,0 @@
-{
-  "id":3,
-  "title": "Am Meer",
-  "description": "Ihr seid gut über die Grenze gekommen und nach vielen Tagen Fußmarsch nun am Meer angelangt.\n Du siehst dich um und fragst ein paar Leute, wie man zu eurem Zielland kommen kann, dabei erfährst du, dass es zwei Möglichkeiten gibt, mit dem Boot oder zu Fuß ums Meer außen herum.\n Mit dem Boot ist zwar riskanter, aber es würde vergleichsweise schnell gehen.\n Zu Fuß würde es deutlich länger dauern, wäre aber weniger gefährlich. Du erfährst allerdings von Freunden, dass ein Land, durch das du musst das Recht auf Asyl aufgehoben hat. Diese Möglichkeit fällt also raus.  ",
-  "opt1": ["mit dem Boot", 4],
-  "opt2": ["zu Fuß", 3]
-}

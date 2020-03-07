@@ -1,8 +1,0 @@
-{
-  "id": 2,
-  "title": "Über die Grenze",
-  "description": "In der Nähe der Grenze zum Nachbarland bleibt euer Bus stehen.\n Du gibst deinen Pass und die anderen Dokumente an den Kontrolleur. Dieser sieht sie mit viel Skepsis an. Nach einer Weile gibt er die Papiere wieder zurück und sagt: Ungültig. Sie haben kein genügendes Visum um hier einreisen zu können. Ein paar Meter weiter siehst du, wie ein anderer Mann euch fokusiert anstarrt. Er hat vermutlich gemerkt, dass dich die Beamten nicht mehr weiterlassen. Nachdem der Mann dich angesprochen hat, stellt sich heraus, dass er professioneller Schlepper ist.\n Für sehr viel Geld würde er euch gefälschte Pässe besorgen und in das Nachbarland bringen.",
-  "opt1":["Den Schlepper bezahlen und mitkommen",3],
-  "opt2":["Abseits der Kontrollstation versuchen, die Grenze zu überschreiten",2]
-  
-}
