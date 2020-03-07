@@ -5,12 +5,15 @@ import Auswahlseite from './Auswahlseite';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Wir programmieren jetzt eine Auswahlseite.
-        </p>
-      </header>
+    <div className="Inhalt">
+        <h1>
+          NOT A GAME
+        </h1>
       <Auswahlseite/>
+      </div>
+      <div className ="footer">
+      TEST TEST
+      </div>
     </div>
   );
 }
