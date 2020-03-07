@@ -1,0 +1,17 @@
+[
+  {
+    "id": 0,
+    "title": "Welches Verkehrsmittel?",
+    "description": "Du kannst wählen",
+    "opt1": ["Bus", 1],
+    "opt2": ["Fuß", 2]
+  },
+  {
+    "id": 1,
+    "title": "Welches Ziel?",
+    "description": "Ziel!",
+    "opt1": ["DE", 3],
+    "opt2": ["GB", 4]
+  }
+
+]

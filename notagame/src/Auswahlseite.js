@@ -5,10 +5,10 @@ class Auswahlseite extends React.Component {
     return(
       <div>
       <h1>Deine Entscheidungen:</h1>
-      <p> {this.props.name} </p>
-      <p id= "Beschreibung"> Beschreibung beschreiben die Beschreibung test test test</p>
-      <button> Test </button>
-      <button> Test </button>
+      <p> {this.props.id} </p>
+      <p id= "Beschreibung"> {this.props.description}</p>
+      <button onClick = {this.props.handlerFirst}> {this.props.options[0]}</button>
+      <button onClick = {this.props.handlerSecond}>{this.props.options[1]}</button>
       </div>
       );
   }
