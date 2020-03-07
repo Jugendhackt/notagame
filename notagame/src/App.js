@@ -4,10 +4,12 @@ import Auswahlseite from './Auswahlseite';
 
 class App extends React.Component{
   state = {
-    "Name" : "dummy name",
-    "Herkunftsland" : "dummy herkunftsland",
-    "Aktuelle Option" : 1
+    Name : "dummy name",
+    Herkunftsland : "dummy herkunftsland",
+    Option : 1
   }
+
+  
   render(){
   return (
     <div className="App">
@@ -15,7 +17,7 @@ class App extends React.Component{
         <h1>
           NOT A GAME
         </h1>
-      <Auswahlseite name="hallo"/>
+      <Auswahlseite name={this.state.Name}/>
       </div>
     </div>
   );
