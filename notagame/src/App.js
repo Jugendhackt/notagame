@@ -45,11 +45,15 @@ class App extends React.Component{
     console.log(this.state.Name);
   return (
     <div className="App">
-    <div className="Inhalt">
-        <h1>
-          NOT A GAME
-        </h1>
-      <Auswahlseite id = {this.state.id} handlerFirst={this.handlerFirst} handlerSecond={this.handlerSecond} options={[this.state.opt1[0], this.state.opt2[0]]} description = {this.state.description}/>
+      <div className="Inhalt">
+          {/* <h1>
+            NOT A GAME
+          </h1> */}
+        <Auswahlseite className="Auswahlseite" id = {this.state.id} handlerFirst={this.handlerFirst} handlerSecond={this.handlerSecond} options={[this.state.opt1[0], this.state.opt2[0]]} description = {this.state.description}/>
+      </div>
+      <div className="Background">
+        <div className="Gradient"></div>
+        <div className="Image"></div>
       </div>
     </div>
   );

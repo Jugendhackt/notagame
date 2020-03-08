@@ -1,15 +1,67 @@
 
 body{
-  height: 100%;
+  height: 100vh;
   display: flex;
 }
 
 #root, #App{
   height: 100%;
   width: 100%;
+  color: #ffffff;
+}
+
+.App{
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .Inhalt{
   display: flex;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  z-index: 1;
+  margin-left: 20%;
+  width: 60%;
+  height: 100%;
+
+}
+
+.Background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: url("https://texturehaven.com/files/textures/jpg/4k/concrete_floor_02/concrete_floor_02_AO_4k.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
+.Gradient{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: linear-gradient(180deg, rgba(25,50,70,0.7) 0%, rgba(20,41,57,1) 80%, rgba(14,29,41,1) 100%);
+  z-index: 1;
+}
+
+.Image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("https://images.unsplash.com/photo-1524275804141-5e9f2bc5a71d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=ivana-cajina-LlDQPnErFxo-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.Auswahlseite{
+  width: 60%;
 }

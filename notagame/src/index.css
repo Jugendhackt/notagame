@@ -1,13 +1,65 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  margin: 0;    
+  font-family: "Caladea";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-weight: 500;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.Title{
+  font-size: 45px;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+}
+
+#Beschreibung{
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  ;
+}
+
+button{
+  padding: 12px 30px;
+  background: #8B7B56;
+  border: none;
+  border-radius: 6px;
+  margin: 5px 20%;
+  width: 60%;
+  height: 40px;
+  color: #FFF3E2;
+  font-family: "Caladea";
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+button::before{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ButtonImage{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("https://texturehaven.com/files/textures/jpg/4k/concrete_floor_02/concrete_floor_02_AO_4k.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+  opacity: 0.5;
 }
