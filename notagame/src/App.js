@@ -1,7 +1,10 @@
 import React from 'react';
 import './App.css';
 import Auswahlseite from './Auswahlseite';
+import Startseite from "./Startseite";
+import Endseite from "./Endseite";
 import data from "./Texte/data.json";
+
 
 class App extends React.Component{
   constructor(props) {
@@ -41,19 +44,26 @@ class App extends React.Component{
  };
 
   render(){
-  return (
-    <div className="App">
-      <h1 id = "header">
-        NOT A GAME
-      </h1>
-      <div className="Inhalt">
-        <Auswahlseite id = {this.state.id} handlerFirst={this.handlerFirst}
-         handlerSecond={this.handlerSecond} options={[this.state.opt1[0], this.state.opt2]}
-         description = {this.state.description}/>
-        </div>
-    </div>
-  );
+    if(this.props.id === 0){
+      console.log("hi");
+      return(<Startseite/>);
+    }else if(this.props.id === -1){
+      return(<Endseite/>);
+    }else{
+    return (
+      <div className="App">
+        <h1 id = "header">
+          NOT A GAME
+        </h1>
+        <div className="Inhalt">
+          <Auswahlseite id = {this.state.id} handlerFirst={this.handlerFirst}
+           handlerSecond={this.handlerSecond} options={[this.state.opt1[0], this.state.opt2]}
+           description = {this.state.description} title={this.state.title}/>
+          </div>
+      </div>
+    );
 };
+}
 }
 
 export default App;
