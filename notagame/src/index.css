@@ -40,8 +40,9 @@ button{
   text-align: left;
   position: relative;
   overflow: hidden;
+  transition: 200ms background, 200ms transform;
 }
-
+/* 
 button::before{
   display: block;
   width: 100%;
@@ -50,6 +51,11 @@ button::before{
   position: absolute;
   top: 0;
   left: 0;
+} */
+
+button:hover{
+  background: rgb(102, 90, 63);
+  transform: scale(1.05);
 }
 
 .ButtonImage{
