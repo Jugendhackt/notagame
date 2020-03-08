@@ -5,7 +5,7 @@ class Auswahlseite extends React.Component {
     if(this.props.options[1] != undefined){
       return(
         <div>
-        <h1>Deine Entscheidungen:</h1>
+        <h1 id="Titel">{this.props.title}</h1>
         <p id= "Beschreibung"> {this.props.description}</p>
         <div id = "buttons">
         <button onClick = {this.props.handlerFirst}> {this.props.options[0]}</button>
@@ -16,7 +16,7 @@ class Auswahlseite extends React.Component {
     }else{
       return(
         <div>
-        <h1>Deine Entscheidungen:</h1>
+        <h1>{this.props.title}</h1>
         <p id= "Beschreibung"> {this.props.description}</p>
         <button onClick = {this.props.handlerFirst}> {this.props.options[0]}</button>
         </div>
