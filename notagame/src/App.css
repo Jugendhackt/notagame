@@ -1,7 +1,7 @@
-
 body{
   height: 100%;
   display: flex;
+  font-family: 'Libre Baskerville';
 }
 
 #root, #App{
@@ -12,4 +12,43 @@ body{
 .Inhalt{
   display: flex;
   text-align: center;
+  margin: 0% 20%;
+}
+
+#header{
+  text-align: center;
+}
+
+button{
+  background: #eeeeee;
+  box-shadow: 0px 0px 0px transparent;
+  border: 2px solid black;
+  text-shadow: 0px 0px 0px transparent;
+  margin: 0.5em;
+  padding: 1em;
+  border-radius: 10px;
+  outline: none;
+}
+
+button:hover{
+  background: #dddddd;
+}
+
+button:active, button:focus{
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+#buttons{
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  width: 100%;
+}
+
+#Beschreibung{
+  line-height: 1.5em;
 }

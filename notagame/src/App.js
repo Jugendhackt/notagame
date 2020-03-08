@@ -6,7 +6,6 @@ import data from "./Texte/data.json";
 class App extends React.Component{
   constructor(props) {
     super(props)
-
     this.handlerFirst = this.goToNextFirst.bind(this)
     this.handlerSecond = this.goToNextSecond.bind(this)
 
@@ -31,26 +30,27 @@ class App extends React.Component{
   };
 
   goToNextSecond(){
+    var curr_id = this.state.opt2[1]
    this.setState({
-     id : this.state.opt2[1],
-     title: data[this.state.id].title,
-     description: data[this.state.id].description,
-     opt1: data[this.state.id].opt1,
-     opt2: data[this.state.id].opt2,
+     id : curr_id,
+     title: data[curr_id].title,
+     description: data[curr_id].description,
+     opt1: data[curr_id].opt1,
+     opt2: data[curr_id].opt2,
    })
  };
 
   render(){
-
-    console.log(this.state.Name);
   return (
     <div className="App">
-    <div className="Inhalt">
-        <h1>
-          NOT A GAME
-        </h1>
-      <Auswahlseite id = {this.state.id} handlerFirst={this.handlerFirst} handlerSecond={this.handlerSecond} options={[this.state.opt1[0], this.state.opt2[0]]} description = {this.state.description}/>
-      </div>
+      <h1 id = "header">
+        NOT A GAME
+      </h1>
+      <div className="Inhalt">
+        <Auswahlseite id = {this.state.id} handlerFirst={this.handlerFirst}
+         handlerSecond={this.handlerSecond} options={[this.state.opt1[0], this.state.opt2]}
+         description = {this.state.description}/>
+        </div>
     </div>
   );
 };
