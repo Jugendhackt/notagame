@@ -69,6 +69,11 @@ handlerStart(){
            handlerSecond={this.handlerSecond} options={[this.state.opt1[0], this.state.opt2]}
            description = {this.state.description} title={this.state.title}/>
           </div>
+          
+        <div className="Background">
+          <div className="Gradient"></div>
+          <div className="Image"></div>
+        </div>
       </div>
     );
 };

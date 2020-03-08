@@ -13,13 +13,16 @@ body{
   display: flex;
   text-align: center;
   margin: 0% 20%;
+  position: relative;
+  color: #ffffff;
 }
 
 #header{
   text-align: center;
 }
 
-button{
+/* button{
+
   background: #eeeeee;
   box-shadow: 0px 0px 0px transparent;
   border: 2px solid black;
@@ -28,10 +31,34 @@ button{
   padding: 1em;
   border-radius: 10px;
   outline: none;
+} */
+
+button{
+  padding: 12px 30px;
+  background: #8B7B56;
+  border: none;
+  border-radius: 6px;
+  margin: 5px 20%;
+  width: 60%;
+  height: 40px;
+  color: #FFF3E2;
+  font-family: "Caladea";
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  transition: 200ms background, 200ms transform;
+}
+
+button:first-child{
+  margin-top: 60px;;
 }
 
 button:hover{
-  background: #dddddd;
+  background: rgb(102, 90, 63);
+  transform: scale(1.05);
 }
 
 button:active, button:focus{
@@ -49,6 +76,46 @@ button::-moz-focus-inner {
   width: 100%;
 }
 
+#Titel{
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 50px;;
+}
+
 #Beschreibung{
-  line-height: 1.5em;
+  font-size: 16px;
+  line-height: 30px;
+  opacity: 0.7;
+}
+
+.Background{
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: url("https://texturehaven.com/files/textures/jpg/4k/concrete_floor_02/concrete_floor_02_AO_4k.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.Background .Gradient{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: linear-gradient(180deg, rgba(25,50,70,0.7) 0%, rgba(20,41,57,1) 80%, rgba(14,29,41,1) 100%);
+  z-index: 1;
+}
+
+.Background .Image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("https://images.unsplash.com/photo-1524275804141-5e9f2bc5a71d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=ivana-cajina-LlDQPnErFxo-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
 }
