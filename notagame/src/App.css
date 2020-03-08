@@ -75,7 +75,11 @@ button::-moz-focus-inner {
   align-content: space-between;
   width: 100%;
 }
-
+h1{
+  color: white;
+  font-size: 25px;
+  padding-top: 1em;
+}
 #Titel{
   text-transform: uppercase;
   margin-top: 50px;
@@ -83,7 +87,7 @@ button::-moz-focus-inner {
 }
 
 #Beschreibung{
-  font-size: 16px;
+  font-size: 20px;
   line-height: 30px;
   opacity: 0.7;
 }
@@ -118,4 +122,9 @@ button::-moz-focus-inner {
   background: url("https://images.unsplash.com/photo-1524275804141-5e9f2bc5a71d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=ivana-cajina-LlDQPnErFxo-unsplash.jpg");
   background-position: center;
   background-size: cover;
+}
+
+#id{
+  width: 2em;
+  height: 2em;
 }

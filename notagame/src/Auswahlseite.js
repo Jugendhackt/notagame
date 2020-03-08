@@ -15,6 +15,15 @@ class Auswahlseite extends React.Component {
         </div>
         )
     }else{
+      if(this.props.id === 6){
+        return(
+          <div>
+            <h1>{this.props.title}</h1>
+            <p id= "Beschreibung"> {this.props.description}</p>
+            <button onClick = {this.props.handlerEnd}> {this.props.options[0]}</button>
+          </div>
+          )
+      }else{
       return(
         <div>
           <h1>{this.props.title}</h1>
@@ -24,6 +33,7 @@ class Auswahlseite extends React.Component {
         )
     }
   }
+}
 }
 
 export default Auswahlseite;

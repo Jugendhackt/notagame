@@ -1,10 +1,11 @@
 import React from 'react';
-
+import logo from './LogoNotAGame.svg'
 class Startseite extends React.Component {
   render() {
       return(
         <div>
         <h1>NOT A GAME </h1>
+        <img id = "logo" src = {logo} alt = "Logo"/>
         <p> Du heißt Marlé, bist 23 Jahre alt und weiblich. Du kommst aus einem Land namens
         Jewos.
         Du gehörst der akademischen Mittelschicht an und wohnst gemeinsam mit deinem
