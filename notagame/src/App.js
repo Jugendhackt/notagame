@@ -11,7 +11,7 @@ class App extends React.Component{
     super(props)
     this.handlerFirst = this.goToNextFirst.bind(this)
     this.handlerSecond = this.goToNextSecond.bind(this)
-
+    this.handlerStart = this.handlerStart.bind(this)
   }
   state = {
     id : 0,
@@ -43,11 +43,20 @@ class App extends React.Component{
    })
  };
 
+handlerStart(){
+  this.setState({
+    id : 1,
+    title : data[1].title,
+    description: data[2].description,
+    opt1: data[2].opt1,
+    opt2: data[2].opt2
+})
+}
   render(){
-    if(this.props.id === 0){
-      console.log("hi");
-      return(<Startseite/>);
-    }else if(this.props.id === -1){
+    if(this.state.id === 0){
+      return(<Startseite handler={this.handlerStart}/>);
+    }else if(this.state.id === -1){
+      console.log("hier");
       return(<Endseite/>);
     }else{
     return (

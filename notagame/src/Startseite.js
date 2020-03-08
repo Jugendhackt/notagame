@@ -17,7 +17,7 @@ class Startseite extends React.Component {
         Du weißt, dass eine Flucht sehr viele Risiken mit sich bringt, trotzdem
         entscheidest du dich gemeinsam mit deiner Familie dafür.
         </p>
-        <button type="button" name="weiter"> Weiter</button>
+        <button type="button" onClick={this.props.handler}> Weiter</button>
         </div>
       )
     }
