@@ -1,8 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 
 class Auswahlseite extends React.Component {
   render() {
-    if(this.props.options[1] != undefined){
+
+    if(this.props.options[1] !== undefined){
       return(
         <div>
         <h1 id="Titel">{this.props.title}</h1>
@@ -16,13 +17,12 @@ class Auswahlseite extends React.Component {
     }else{
       return(
         <div>
-        <h1>{this.props.title}</h1>
-        <p id= "Beschreibung"> {this.props.description}</p>
-        <button onClick = {this.props.handlerFirst}> {this.props.options[0]}</button>
+          <h1>{this.props.title}</h1>
+          <p id= "Beschreibung"> {this.props.description}</p>
+          <button onClick = {this.props.handlerFirst}> {this.props.options[0]}</button>
         </div>
         )
     }
-
   }
 }
 
