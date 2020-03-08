@@ -2,15 +2,27 @@ import React, {Component} from 'react';
 
 class Auswahlseite extends React.Component {
   render() {
-    return(
-      <div>
-      <h1>Deine Entscheidungen:</h1>
-      <p> {this.props.name} </p>
-      <p id= "Beschreibung"> Beschreibung beschreiben die Beschreibung test test test</p>
-      <button> Test </button>
-      <button> Test </button>
-      </div>
-      );
+    if(this.props.options[1] != undefined){
+      return(
+        <div>
+        <h1>Deine Entscheidungen:</h1>
+        <p id= "Beschreibung"> {this.props.description}</p>
+        <div id = "buttons">
+        <button onClick = {this.props.handlerFirst}> {this.props.options[0]}</button>
+        <button onClick = {this.props.handlerSecond}>{this.props.options[1][0]}</button>
+        </div>
+        </div>
+        )
+    }else{
+      return(
+        <div>
+        <h1>Deine Entscheidungen:</h1>
+        <p id= "Beschreibung"> {this.props.description}</p>
+        <button onClick = {this.props.handlerFirst}> {this.props.options[0]}</button>
+        </div>
+        )
+    }
+
   }
 }
 
