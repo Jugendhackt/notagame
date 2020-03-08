@@ -45,6 +45,7 @@ class App extends React.Component{
 
   render(){
     if(this.props.id === 0){
+      console.log("hi");
       return(<Startseite/>);
     }else if(this.props.id === -1){
       return(<Endseite/>);
